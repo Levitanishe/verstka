@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+button {
+    outline: 0;
+    border: none;
+}
+
+div.main {
+    margin: 16px auto;
+    border: 1px #d8d8d8 solid;
+    border-radius: 5px;
+    width: 90vw;
+    position: relative;
+    box-shadow: 0 5px 20px #bebebe;
+}
+
+header {
+    border-bottom: 2px #dddddd solid;
+    clear: both;
+    overflow: auto;
+    padding: 16px 28px;
+}
+
+header .left {
+    float: left;
+    text-align: left;
+
+}
+
+header .right {
+    float: right;
+    text-align: right;
+    margin-top: 8px;
+}
+
+header .left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+header .right img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+header .left img,
+header .left h3,
+header .right img,
+header .right h3,
+header .right div{
+    display: inline;
+    vertical-align: middle;
+}
+
+#vin-request {
+    border: 1px #dee4e7 solid;
+    margin: 30px 3%;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: 0 0 3px rgba(222, 228, 231, 0.51);
+}
+
+#vin-request p {
+    color: darkgrey;
+    font-size: 12px;
+}
+
+#vin-request input {
+    height: 50px;
+    font-size: 40px;
+    outline: 0;
+    border: none;
+    width: inherit;
+}
+
+.vin-wrap {
+    float: left;
+    width: 60%;
+}
+
+.availability {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.availability h5 {
+    margin: 0;
+    color: #70c399;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.availability div,
+.availability img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clear {
+    clear: both;
+}
+
+main {
+    padding: 8px 0 16px 0;
+    min-height: 100%;
+    height: auto;
+    margin: 30px 3% 20px 3%;
+}
+
+main section {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main section.right img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+main section.left {
+    width: 33%;
+}
+
+main section.middle {
+    width: auto;
+}
+
+main section.right {
+    min-width: 33%;
+    text-align: right !important;
+}
+
+button.main {
+    width: 100%;
+    height: 90px;
+    background-color: #e15451;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 0 0 0;
+    box-shadow: 0 5px 30px rgba(235, 85, 82, 0.7);
+}
+
+section.left p {
+    color: darkgrey;
+    line-height: 1.6;
+}
+
+ol {
+    line-height: 2;
+}
+
+.dashed-wrapper {
+    border-bottom: 2px #cccccc dashed;
+}
+
+footer {
+    margin: 24px 2%;
+}
+
+footer button {
+    display: inline;
+    width: 31%;
+    background-color: #fbfbfb;
+    height: 70px;
+    margin: 8px 1%;
+    font-size: 16px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    main section.left {
+        width: 50%;
+    }
+
+    main section.middle {
+        width: 49%;
+    }
+
+    main section.right {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    header .right div {
+        display: block;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    footer button {
+        width: 100%;
+    }
+
+    header .right {
+        width: 40%;
+    }
+
+    header .left {
+        width: 60%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    main section.left {
+        width: 100%;
+    }
+
+    main section.middle {
+        width: 100%;
+    }
+
+    main section.right {
+        width: 100%;
+    }
+
+    header .right {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .left {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .vin-wrap {
+        width: 100%;
+    }
+
+    .availability {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    main section.right {
+        text-align: center;
+    }
+}
